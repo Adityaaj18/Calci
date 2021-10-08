@@ -14,7 +14,9 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(28, 231, 221);
+  background: #00c6ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   transition: 0.8s all;
 }
 h1 {
@@ -61,6 +63,9 @@ input[type="button"]:hover {
 #clear {
   color: #fff;
   background-color: rgb(255, 25, 25);
+}
+#clear:hover{
+  background-color: rgb(223,00);
 }
 button {
   border: none;
